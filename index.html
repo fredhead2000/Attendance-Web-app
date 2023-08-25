@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="attendanceTab">
+        <h2>Attendance for <span id="currentDate"></span></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Late</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Added rows for each student name provided -->
+                <tr>
+                    <td>Ahmed</td>
+                    <td><input type="checkbox" name="attendance_Ahmed" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Ahmed" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Ahmed" value="Late"></td>
+                </tr>
+                <!-- ... Similarly for all other names ... -->
+                <tr>
+                    <td>Aynelis</td>
+                    <td><input type="checkbox" name="attendance_Aynelis" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Aynelis" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Aynelis" value="Late"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- ... (the rest of your current HTML code) ... -->
+
+    </div> <!-- This is the closing div tag for your 'attendanceTab' -->
+    
+    <!-- Add the export button right after your 'attendanceTab' div and before the script tag -->
+    <button onclick="exportToCSV()">Export Attendance</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
