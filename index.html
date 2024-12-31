@@ -21,6 +21,7 @@
             margin: 20px 0;
             font-size: 2rem;
             color: #333;
+            text-align: center;
         }
 
         table {
@@ -36,6 +37,7 @@
             text-align: center;
             padding: 15px;
             font-size: 1.2rem;
+            border: 1px solid #ccc; /* Subtle dark grey border */
         }
 
         th {
@@ -221,12 +223,13 @@
     <!-- Buttons -->
     <button onclick="exportToCSV()">Export Attendance</button>
     <button onclick="aggregateData()">Aggregate Data</button>
+    <button onclick="clearAll()">Clear All</button>
 
     <script>
-        // Function to display the current date
+        // Display current date
         document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
 
-        // Function to export attendance to CSV
+        // Export to CSV
         function exportToCSV() {
             let csvContent = "data:text/csv;charset=utf-8,Student Name,Present,Absent,Late\n";
             const rows = document.querySelectorAll('tbody tr');
@@ -249,7 +252,7 @@
             document.body.removeChild(link);
         }
 
-        // Function to aggregate data
+        // Aggregate data
         function aggregateData() {
             let presentCount = 0, absentCount = 0, lateCount = 0;
             const rows = document.querySelectorAll('tbody tr');
@@ -261,6 +264,12 @@
             });
 
             alert(`Aggregated Data:\nPresent: ${presentCount}\nAbsent: ${absentCount}\nLate: ${lateCount}`);
+        }
+
+        // Clear all checkboxes
+        function clearAll() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => checkbox.checked = false);
         }
     </script>
 </body>
