@@ -5,7 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attendance Tracking</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Century Gothic', Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2rem;
+        }
+
+        th {
+            background-color: #3f51b5;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        /* Alternate row shading */
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e9ecef;
+        }
+
+        td {
+            font-weight: bold;
+        }
+
+        /* Larger checkboxes */
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Buttons */
+        button {
+            background-color: #3f51b5;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #303f9f;
+        }
+    </style>
 </head>
 <body>
     <div id="attendanceTab">
@@ -20,150 +94,174 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Alana -->
-<tr>
-    <td>Alana</td>
-    <td><input type="checkbox" name="attendance_Alana" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Alana" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Alana" value="Late"></td>
-</tr>
-<!-- Betzy -->
-<tr>
-    <td>Betzy</td>
-    <td><input type="checkbox" name="attendance_Betzy" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Betzy" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Betzy" value="Late"></td>
-</tr>
-<!-- Brailyn -->
-<tr>
-    <td>Brailyn</td>
-    <td><input type="checkbox" name="attendance_Brailyn" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Brailyn" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Brailyn" value="Late"></td>
-</tr>
-<!-- Cherilenny -->
-<tr>
-    <td>Cherilenny</td>
-    <td><input type="checkbox" name="attendance_Cherilenny" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Cherilenny" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Cherilenny" value="Late"></td>
-</tr>
-<!-- Christian -->
-<tr>
-    <td>Christian</td>
-    <td><input type="checkbox" name="attendance_Christian" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Christian" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Christian" value="Late"></td>
-</tr>
-<!-- Dilan -->
-<tr>
-    <td>Dilan</td>
-    <td><input type="checkbox" name="attendance_Dilan" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Dilan" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Dilan" value="Late"></td>
-</tr>
-<!-- Eduardo -->
-<tr>
-    <td>Eduardo</td>
-    <td><input type="checkbox" name="attendance_Eduardo" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Eduardo" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Eduardo" value="Late"></td>
-</tr>
-<!-- Emilee -->
-<tr>
-    <td>Emilee</td>
-    <td><input type="checkbox" name="attendance_Emilee" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Emilee" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Emilee" value="Late"></td>
-</tr>
-<!-- Esperanza -->
-<tr>
-    <td>Esperanza</td>
-    <td><input type="checkbox" name="attendance_Esperanza" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Esperanza" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Esperanza" value="Late"></td>
-</tr>
-<!-- Jeston -->
-<tr>
-    <td>Jeston</td>
-    <td><input type="checkbox" name="attendance_Jeston" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Jeston" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Jeston" value="Late"></td>
-</tr>
-<!-- Kaleb -->
-<tr>
-    <td>Kaleb</td>
-    <td><input type="checkbox" name="attendance_Kaleb" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Kaleb" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Kaleb" value="Late"></td>
-</tr>
-<!-- Keysi -->
-<tr>
-    <td>Keysi</td>
-    <td><input type="checkbox" name="attendance_Keysi" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Keysi" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Keysi" value="Late"></td>
-</tr>
-<!-- Leana -->
-<tr>
-    <td>Leana</td>
-    <td><input type="checkbox" name="attendance_Leana" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Leana" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Leana" value="Late"></td>
-</tr>
-<!-- Lily -->
-<tr>
-    <td>Lily</td>
-    <td><input type="checkbox" name="attendance_Lily" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Lily" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Lily" value="Late"></td>
-</tr>
-<!-- Melania -->
-<tr>
-    <td>Melania</td>
-    <td><input type="checkbox" name="attendance_Melania" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Melania" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Melania" value="Late"></td>
-</tr>
-<!-- Messi -->
-<tr>
-    <td>Messi</td>
-    <td><input type="checkbox" name="attendance_Messi" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Messi" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Messi" value="Late"></td>
-</tr>
-<!-- Noah -->
-<tr>
-    <td>Noah</td>
-    <td><input type="checkbox" name="attendance_Noah" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Noah" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Noah" value="Late"></td>
-</tr>
-<!-- Osmary -->
-<tr>
-    <td>Osmary</td>
-    <td><input type="checkbox" name="attendance_Osmary" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Osmary" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Osmary" value="Late"></td>
-</tr>
-<!-- Sariangelis -->
-<tr>
-    <td>Sariangelis</td>
-    <td><input type="checkbox" name="attendance_Sariangelis" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Sariangelis" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Sariangelis" value="Late"></td>
-</tr>
-<!-- Sindy -->
-<tr>
-    <td>Sindy</td>
-    <td><input type="checkbox" name="attendance_Sindy" value="Present"></td>
-    <td><input type="checkbox" name="attendance_Sindy" value="Absent"></td>
-    <td><input type="checkbox" name="attendance_Sindy" value="Late"></td>
-</tr>
+                <!-- Student Names -->
+                <tr>
+                    <td>Alana</td>
+                    <td><input type="checkbox" name="attendance_Alana" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Alana" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Alana" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Betzy</td>
+                    <td><input type="checkbox" name="attendance_Betzy" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Betzy" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Betzy" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Brailyn</td>
+                    <td><input type="checkbox" name="attendance_Brailyn" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Brailyn" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Brailyn" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Cherilenny</td>
+                    <td><input type="checkbox" name="attendance_Cherilenny" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Cherilenny" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Cherilenny" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Christian</td>
+                    <td><input type="checkbox" name="attendance_Christian" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Christian" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Christian" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Dilan</td>
+                    <td><input type="checkbox" name="attendance_Dilan" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Dilan" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Dilan" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Eduardo</td>
+                    <td><input type="checkbox" name="attendance_Eduardo" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Eduardo" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Eduardo" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Emilee</td>
+                    <td><input type="checkbox" name="attendance_Emilee" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Emilee" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Emilee" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Esperanza</td>
+                    <td><input type="checkbox" name="attendance_Esperanza" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Esperanza" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Esperanza" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Jeston</td>
+                    <td><input type="checkbox" name="attendance_Jeston" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Jeston" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Jeston" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Kaleb</td>
+                    <td><input type="checkbox" name="attendance_Kaleb" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Kaleb" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Kaleb" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Keysi</td>
+                    <td><input type="checkbox" name="attendance_Keysi" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Keysi" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Keysi" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Leana</td>
+                    <td><input type="checkbox" name="attendance_Leana" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Leana" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Leana" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Lily</td>
+                    <td><input type="checkbox" name="attendance_Lily" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Lily" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Lily" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Melania</td>
+                    <td><input type="checkbox" name="attendance_Melania" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Melania" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Melania" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Messi</td>
+                    <td><input type="checkbox" name="attendance_Messi" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Messi" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Messi" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Noah</td>
+                    <td><input type="checkbox" name="attendance_Noah" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Noah" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Noah" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Osmary</td>
+                    <td><input type="checkbox" name="attendance_Osmary" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Osmary" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Osmary" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Sariangelis</td>
+                    <td><input type="checkbox" name="attendance_Sariangelis" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Sariangelis" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Sariangelis" value="Late"></td>
+                </tr>
+                <tr>
+                    <td>Sindy</td>
+                    <td><input type="checkbox" name="attendance_Sindy" value="Present"></td>
+                    <td><input type="checkbox" name="attendance_Sindy" value="Absent"></td>
+                    <td><input type="checkbox" name="attendance_Sindy" value="Late"></td>
+                </tr>
             </tbody>
         </table>
     </div>
+    <!-- Buttons -->
     <button onclick="exportToCSV()">Export Attendance</button>
-    <script src="script.js"></script>
+    <button onclick="aggregateData()">Aggregate Data</button>
+
+    <script>
+        // Function to display the current date
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+
+        // Function to export attendance to CSV
+        function exportToCSV() {
+            let csvContent = "data:text/csv;charset=utf-8,Student Name,Present,Absent,Late\n";
+            const rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(row => {
+                const cells = row.querySelectorAll('td');
+                const studentName = cells[0].textContent;
+                const present = cells[1].querySelector('input').checked ? "Yes" : "No";
+                const absent = cells[2].querySelector('input').checked ? "Yes" : "No";
+                const late = cells[3].querySelector('input').checked ? "Yes" : "No";
+                csvContent += `${studentName},${present},${absent},${late}\n`;
+            });
+
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement('a');
+            link.setAttribute('href', encodedUri);
+            link.setAttribute('download', 'attendance.csv');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Function to aggregate data
+        function aggregateData() {
+            let presentCount = 0, absentCount = 0, lateCount = 0;
+            const rows = document.querySelectorAll('tbody tr');
+
+            rows.forEach(row => {
+                if (row.querySelector('td:nth-child(2) input').checked) presentCount++;
+                if (row.querySelector('td:nth-child(3) input').checked) absentCount++;
+                if (row.querySelector('td:nth-child(4) input').checked) lateCount++;
+            });
+
+            alert(`Aggregated Data:\nPresent: ${presentCount}\nAbsent: ${absentCount}\nLate: ${lateCount}`);
+        }
+    </script>
 </body>
 </html>
